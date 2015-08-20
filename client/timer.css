@@ -1,0 +1,21 @@
+/* CSS declarations go here */
+
+/*
+Orange: #EE6848  /  pantone 7416C
+Grey: #5B5A55  /  Pantone 418C
+Beige: #F0EFE8
+*/
+
+body {
+  margin-top: 10px;
+}
+
+body > .grid {
+  height: 100%;
+}
+.image {
+  margin-top: -100px;
+}
+.column {
+  max-width: 450px;
+}

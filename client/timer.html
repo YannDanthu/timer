@@ -1,0 +1,36 @@
+<head>
+  <title>Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+  {{> timer}}
+</body>
+
+<template name="timer">
+  <div class="ui middle aligned center aligned grid">
+    <div class="column">
+      <!-- TODO: customize semantc-ui to change @orange value -->
+      <h1 class="ui header" style="color: #EE6848;"><img class="ui middle aligned mini image" src="/timer-logo-100.png">Timer</h1>
+      <div class="ui">
+        <div class="ui fluid action input">
+          <input type="number" id="initValue" name="initValue" placeholder="seconds" value="60"/>
+          <button id="start" class="ui button">Start</button>
+          <button id="stop" class="ui button">Stop</button>
+          <div class="ui icon button" data-content="Click on timer to toggle elapse/remaining time.">
+            <i class="circular info icon blue" ></i>
+          </div>
+        </div>
+
+        <div class="ui large">
+    	    <div id="container-time" class="ui info" data-content="Clik on timer to toggle elapse/remaining time."></div>
+        </div>
+
+        <div class="ui footer">
+          <div class="ui inverted section divider"></div>
+          @YannDanthu - 2015
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
